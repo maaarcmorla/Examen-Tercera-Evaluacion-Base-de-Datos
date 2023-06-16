@@ -37,4 +37,38 @@
 
 ## **Resultado Examen:**
 
-1. 
+1. select * from Customers;
+
+![1](1.png)
+
+2. select max(customerid), max(customername), max(contcatname), max(address), max(city), max(postalcode), max(coutry) from customers;
+
+![2](2.png)
+
+3. select CustomerName, City from customers;
+
+![3](3.png)
+
+4. select distinct country from customers;
+
+![4](4.png)
+
+5. select * from customers where Country="Mexico";
+
+![5](5.png)
+
+6. select * from customers where Country="Germany" and city="Berlin";
+
+![6](6.png)
+
+7. select ProductName, CategoryName from products inner join categories on products.CategoryID = categories.CategoryID;
+
+![7](7.png)
+
+8. ???
+
+
+9. select categoryname, count(productid) as contador from categories inner join products on categories.CategoryID = products.CategoryID group by categoryname;
+![9](9.png)
+
+10. ???
